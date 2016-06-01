@@ -1,0 +1,55 @@
+.application-wrapper
+  position fixed; top 0; left 0; right 0; bottom 0
+  display flex; flex-direction column
+  .app-header
+    text-align center; font-size 25px
+    font-weight bold; margin-top 25px
+
+  .app-content
+    display flex; flex 1
+
+.messenger-wrapper
+    display flex; flex-direction column
+    flex 1
+  .alias
+    padding 0 15px
+    input
+      width 100%; box-sizing border-box
+      font-size 18px; border none
+      text-align center
+
+  .messenger-messages
+    flex 1; padding 0 15px
+
+    .message-line
+      font-size 15px; line-height 24px
+      display flex
+
+      .sender
+        width 70px; white-space nowrap
+        overflow hidden; text-overflow ellipsis
+        font-weight 600
+
+      .message
+        flex 1; margin-left 10px
+
+  .messenger-pane
+    display flex; flex-direction row
+    vertical-align center; align-items center
+    margin-bottom 15px
+
+    .messenger-text
+      flex 1; margin 0 16px
+
+      input
+        width 100%; box-sizing border-box
+        line-height 34px; font-size 15px
+        padding 0 12px; border-radius 3px
+        border solid 1px #cccccc
+        &:focus
+          border-color #1385e5 !important
+          box-shadow inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(19, 133, 229, 0.1)
+          outline 0
+
+input
+  outline none
